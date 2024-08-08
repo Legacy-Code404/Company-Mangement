@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  box-shadow: 0 0 7px #a3b9d233;
+  background-color: rgba(255, 255, 255, 0.077);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 0px;
+}
+.header .container .logo {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .container .logo img {
+  width: 46px;
+  height: 45px;
+  border-radius: 12px;
+}
+.header .container .logo h1 {
+  font-size: 25px;
+  font-weight: 400;
+  transition: var(--main-tran);
+}
+.header .container .logo h1:hover {
+  color: var(--main-color);
+}
+.header .container .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.header .container .profile img {
+  width: 45px;
+  height: 45px;
+}
+.header .container .profile i {
+  font-size: 30px;
+}

@@ -1,0 +1,83 @@
+.add-page {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .add-page .add-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+  }
+  .add-page .add-form .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .add-page .add-form .form-inputs .dates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 400px;
+    input {
+      width: 50%;
+    }
+  }
+  .add-page .add-form .form-inputs .form-input {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+  }
+  .add-page .add-form button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--main-color);
+  }
+  .add-page .add-form button * {
+    color: var(--white-color);
+  }
+    .table_component {
+        overflow: auto;
+        width: 100%;
+      }
+  table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    border-spacing: 0px;
+    text-align: left;
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: separate;
+  }
+  th {
+    color: var(--black-color);
+    padding: 15px;
+    text-align: center;
+    background-color: #ebecee;
+  }
+  td {
+    border: 1px solid var(--box2-color);
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    border-left: 0;
+    border-bottom: 0;
+    font-size: 14px;
+  }
+  td:last-child {
+    border-right: 0;
+  }
+  @media (max-width: 1065px) {
+    .add-page .add-form,
+    .add-page .add-form .form-inputs .form-input,
+    .add-page .add-form .form-inputs .dates {
+      width: 100%;
+    }
+  }
